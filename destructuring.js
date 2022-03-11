@@ -31,4 +31,5 @@ const employee = {
 
 const { machine, ide } = employee;
 // need to use chaining when taking from a property inside a property
-const { weight, height } = employee.specification;
+const { weight, height } = employee?.specification;
+// used ternany for optional chaining so that if no value is found there is no error
